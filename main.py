@@ -267,7 +267,7 @@ if __name__ == '__main__':
 
 	print('Dataset: {}, lr: {}, using_lp: {}'.format(target, args.lr, args.using_lp))
 
-	file_name = 'data/' + target
+	file_name = target + '.mat'
 
 	data = load_data(file_name, tr_rate=args.tr_rate)
 	_, _, _, X_test, Y_test = data
